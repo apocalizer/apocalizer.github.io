@@ -1,0 +1,162 @@
+/* ヘッター */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.menutext{
+    margin-left: auto;
+}
+
+.menu {
+    flex: 1;
+    text-align: center;
+}
+
+.menu a {
+    margin: 0 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.activeABOUT {
+    text-decoration: underline;
+}
+
+a:visited {
+ color: #ffffff;
+}
+
+.logo {
+    width: 200px;
+}
+
+.box {
+    background-color: rgb(123, 123, 123);
+    width: 200;
+    height: 100px;
+}
+/* ヘッターここまで */
+
+body {
+    padding-top: 100px;
+    background-color: rgb(29, 29, 29);
+    background-image: url("about.png");
+    background-repeat: no-repeat;
+    background-position: center 120px;
+    background-position-y: 120px;
+    margin: 0;
+}
+
+.about-hero {
+    min-height: 100vh;
+    background-image: url("About.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.35);
+    padding: 80px 50px;
+    box-sizing: border-box;
+}
+
+.overlay h1 {
+    color: white;
+    font-size: 100px;
+    margin: 0 0 50px 0;
+    font-family: Arial, sans-serif;
+}
+
+.about-text {
+    color: white;
+    max-width: 1200px;
+}
+
+.about-text h2 {
+    font-size: 55px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.about-text p {
+    font-size: 40px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+}
+
+/* フッターここから */
+footer {
+    height: 150px;
+    overflow: hidden;
+    background: #000000;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-left,
+.footer-right {
+    width: 300px;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 25px 0;
+    font-size: 20px;
+}
+
+.footer-left span,
+.footer-right span {
+    color: #ff9900;
+    margin-right: 20px;
+}
+
+.footer-logo {
+    text-align: center;
+}
+
+.footer-logo img {
+    width: 500px;
+    max-width: 100%;
+}
+
+
+.footer-right a,
+.footer-bottom a {
+    color: white;
+}
+
+.footer-bottom {
+    background: #05070a;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom div:first-child {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-bottom a {
+    text-decoration: underline;
+}
+
+p{
+    color: #ffffff;
+}
+/* フッターここまで */
