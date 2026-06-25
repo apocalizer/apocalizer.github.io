@@ -93,7 +93,8 @@ footer {
 }
 
 .footer-logo img {
-    width: 500px;
+    z-index: 10;
+    width: 450px;
     max-width: 100%;
 }
 
@@ -104,7 +105,7 @@ footer {
 }
 
 .footer-bottom {
-    background: #05070a;
+    background: #000000;
     padding: 20px 50px;
     display: flex;
     justify-content: space-between;
