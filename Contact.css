@@ -59,6 +59,63 @@ body {
     padding: 0;
 }
 
+/* 画面中央 */
+.contact-box{
+    width: 700px;
+    margin: 150px auto;
+    background: rgba(0,0,0,0.7);
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+/* タイトル */
+.contact-box h1{
+    color: white;
+    margin-bottom: 30px;
+}
+
+/* 入力欄 */
+.contact-box input,
+.contact-box textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+}
+
+/* お問い合わせ内容 */
+.contact-box textarea{
+    height: 250px;
+    resize: none;
+}
+
+/* ボタン */
+.contact-box button{
+    width: 200px;
+    padding: 15px;
+    font-size: 22px;
+    background: #ff5b1f;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.contact-box button:hover{
+    background: #ff7d4a;
+}
+
+/* メッセージ */
+#result{
+    color: white;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
 
 /* フッターここから */
 footer {

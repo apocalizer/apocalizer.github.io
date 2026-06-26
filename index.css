@@ -15,6 +15,13 @@ nav {
     margin-left: auto;
 }
 
+.menutext a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    margin: 0 18px;
+}
+
 .menu {
     flex: 1;
     text-align: center;
@@ -27,6 +34,7 @@ nav {
 a{
     text-decoration: none;
 }
+
 
 .activeHOME {
     text-decoration: underline;
@@ -95,6 +103,20 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+.download-btn {
+    display: inline-block;
+    font-size: 1.3rem;
+    padding: 16px 32px;
+    color: white;
+    background: #d42b1c;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    margin: 30px auto;
+    letter-spacing: 0.08em;
+}
+
 body{
     background:#000000;
     margin:0;
@@ -120,7 +142,7 @@ body{
 }
 
 .feature h2{
-    font-size:50px;
+    font-size: clamp(2.5rem, 3.5vw, 5rem);
     margin-top:30px;
     font-weight:bold;
     line-height:1.1;
@@ -142,7 +164,7 @@ body {
 h1 {
     color: rgb(255, 0, 0);
     text-align: left;
-    font-size: clamp(2rem, 5vw, 5rem);
+    font-size: clamp(3rem, 7vw, 7rem);
     position: relative;
     top: -220px;
 }
