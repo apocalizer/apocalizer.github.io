@@ -55,7 +55,7 @@
     const message = document.getElementById("message").value;
 
     const data = {
-    content: `お問い合わせ\n名前: ${name}\ne-mail: ${email}\nメッセージ: ${message}`
+    content: `名前: ${name}\ne-mail: ${email}\nメッセージ: ${message}`
     };
 
     await fetch(WEBHOOK_URL, {
