@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "SourceHanSansJP";
+    src: url("fonts/SourceHanSansJP-Medium.otf");
+}
+
+@font-face {
+    font-family: "CaptureIt";
+    src: url("fonts/Capture_it.ttf");
+}
+
 /* ヘッター */
 nav {
     position: fixed;
@@ -11,7 +21,7 @@ nav {
     padding: 10px 0;
 }
 
-.menutext{
+.menutext {
     margin-left: auto;
 }
 
@@ -31,7 +41,7 @@ nav {
     margin: 0 20px;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
@@ -41,7 +51,7 @@ a{
 }
 
 a:visited {
- color: #ffffff;
+    color: #ffffff;
 }
 
 .logo {
@@ -53,6 +63,7 @@ a:visited {
     width: 200;
     height: 100px;
 }
+
 /* ヘッターここまで */
 
 
@@ -74,35 +85,36 @@ img {
     letter-spacing: 0.08em;
 }
 
-body{
-    background:#000000;
-    margin:0;
-    color:white;
-    font-family:sans-serif;
+body {
+    background: #000000;
+    margin: 0;
+    color: white;
+    font-family: sans-serif;
 }
 
-.features{
-    display:flex;
-    justify-content:space-around;
-    align-items:flex-start;
-    padding:100px 50px;
-    gap:50px;
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 100px 50px;
+    gap: 50px;
 }
 
-.feature{
-    width:400px;
+.feature {
+    width: 400px;
 }
 
-.feature img{
-    width:100%;
-    display:block;
+.feature img {
+    width: 100%;
+    display: block;
 }
 
-.feature h2{
+.feature h2 {
+    font-family: "SourceHanSansJP", sans-serif;
     font-size: clamp(2.5rem, 3.5vw, 5rem);
-    margin-top:30px;
-    font-weight:bold;
-    line-height:1.1;
+    margin-top: 30px;
+    font-weight: bold;
+    line-height: 1.1;
 }
 
 /* ヘッターここまで */
@@ -119,16 +131,16 @@ body {
 }
 
 h1 {
-    color: rgb(255, 255, 255);
+    color: rgb(219, 219, 219);
     text-align: left;
     font-size: clamp(3rem, 7vw, 7rem);
     position: relative;
     top: -220px;
     text-shadow:
-        -2px -2px 0 black,
-         2px -2px 0 black,
-        -2px  2px 0 black,
-         2px  2px 0 black;
+        -1px -1px 0 black,
+        1px -1px 0 black,
+        -1px 1px 0 black,
+        1px 1px 0 black;
 }
 
 .white-text {
@@ -198,7 +210,8 @@ footer {
     text-decoration: underline;
 }
 
-p{
+p {
     color: #ffffff;
 }
+
 /* フッターここまで */
