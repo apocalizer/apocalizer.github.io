@@ -119,11 +119,16 @@ body {
 }
 
 h1 {
-    color: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
     text-align: left;
     font-size: clamp(3rem, 7vw, 7rem);
     position: relative;
     top: -220px;
+    text-shadow:
+        -2px -2px 0 black,
+         2px -2px 0 black,
+        -2px  2px 0 black,
+         2px  2px 0 black;
 }
 
 .white-text {
