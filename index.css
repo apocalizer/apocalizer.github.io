@@ -19,7 +19,10 @@ nav {
     display: flex;
     align-items: center;
     padding: 10px 0;
+    transition: transform 0.3s ease;
 }
+
+
 
 .menutext {
     margin-left: auto;

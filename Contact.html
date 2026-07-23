@@ -1,101 +1,113 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <title>お問い合わせ</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Contact.css">
+   <meta charset="UTF-8">
+   <title>お問い合わせ</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="Contact.css">
 
 </head>
+
 <body>
+   <!-- ヘッターここから -->
+   <nav>
+      <div class="box">
+         <img src="APOCALIZE.png" width="200">
+      </div>
+      <div class="menutext">
+         <a href="index.html" class="activeHOME">Home</a>
+         <a href="About.html" class="activeABOUT">ABOUT</a>
+         <a href="Download.html" class="activeDOWNLOAD">DOWNLOAD</a>
+         <a href="Contact.html" class="activeCONTACT">お問い合わせ</a>
+      </div>
+   </nav>
+   <!-- ヘッターここまで -->
+   <div class="contact-container">
+      <h1>お問い合わせ</h1>
+      <p>ご質問など、お気軽にお送りください。<br>
+         内容確認次第、担当者よりご連絡させていただきます。<br>
+      </p>
+   </div>
 
-    <!-- ヘッターここから -->
-    <nav>
-        <div class="box">   
-        <img src="APOCALIZE.png"width="200">
-        </div>
-        <div class="menutext">
-        <a href="index.html" class="activeHOME">Home</a>
-        <a href="About.html" class ="activeABOUT">ABOUT</a>
-        <a href="Download.html" class ="activeDOWNLOAD">DOWNLOAD</a>
-        <a href="Contact.html"class ="activeCONTACT">お問い合わせ</a>
-        </div>
-    </nav>
-    <!-- ヘッターここまで -->
-     
+   <div class="contact-box">
+      <h1>お問い合わせフォーム</h1>
 
-    <div class="contact-box">
-       <h1>お問い合わせ</h1>
-
-       <form id="contactForm">
+      <form id="contactForm">
 
          <input type="text" id="name" placeholder="お名前">
 
          <input type="email" id="email" placeholder="メールアドレス">
 
+         <input type="text" id="subject" placeholder="件名">
+
          <textarea id="message" placeholder="お問い合わせ内容"></textarea>
 
-        <button type="submit">送信</button>
+         <button type="submit">送信</button>
 
-        <p id="result"></p>
+         <p id="result"></p>
 
-        </form>
-    </div>
+      </form>
+   </div>
 
-    <p id="result"></p>
+   <p id="result"></p>
 
-    <script src="contact.js"></script>
+   <script src="contact.js"></script>
 
-    <script>
-    const WEBHOOK_URL = "https://discord.com/api/webhooks/1494541815058006027/eF_OwGp0EvZ2vPNA7yGoqmod1ftUuwoq6FgpLzCDE7pDmt9PewDCdoWa7lBPv19foVcW";
+   <script>
+      const WEBHOOK_URL = "https://discord.com/api/webhooks/1494541815058006027/eF_OwGp0EvZ2vPNA7yGoqmod1ftUuwoq6FgpLzCDE7pDmt9PewDCdoWa7lBPv19foVcW";
 
-    document.getElementById("contactForm").addEventListener("submit", async function(e) {
-    e.preventDefault();
+      document.getElementById("contactForm").addEventListener("submit", async function (e) {
+         e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const message = document.getElementById("message").value;
+         const name = document.getElementById("name").value;
+         const email = document.getElementById("email").value;
+         const subject = document.getElementById("subject").value;
+         const message = document.getElementById("message").value;
 
-    const data = {
-    content: `名前: ${name}\ne-mail: ${email}\nメッセージ: ${message}`
-    };
+         const data = {
+            content: `名前: ${name}\ne-mail: ${email}\n件名: ${subject}\nメッセージ: ${message}`
+         };
 
-    await fetch(WEBHOOK_URL, {
-     method: "POST",
-     headers: {
-      "Content-Type": "application/json"
-     },
-      body: JSON.stringify(data)
-     });
+         await fetch(WEBHOOK_URL, {
+            method: "POST",
+            headers: {
+               "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+         });
 
-     alert("送信されました");
-     this.reset();
-     });
+         alert("送信されました");
+         this.reset();
+      });
    </script>
 
 
-    <!-- フッターここから -->
-    <footer>
-     <div class="footer-left">
-        <p><span>[01]</span> <a href="https://x.com/Seisakuchu4">Twitter</a></p>
-     </div>
+   <!-- フッターここから -->
+   <footer>
+      <div class="footer-left">
+         <p><span>[01]</span> <a href="https://x.com/Seisakuchu4">Twitter</a></p>
+      </div>
 
-     <div class="footer-logo">
-        <img src="APOCALIZE.png" alt="RECLAIM">
-     </div>
+      <div class="footer-logo">
+         <img src="APOCALIZE.png" alt="RECLAIM">
+      </div>
 
-     <div class="footer-right">
-        <p><span>[02]</span> <a href="https://discord.gg/vVDxqARsHw">Discord</a></p>
-     </div>
-    </footer>
-    <div class="footer-bottom">
-       <div>
-          <a href="privacy_policy.html">利用規約と方針</a>
-        </div>
+      <div class="footer-right">
+         <p><span>[02]</span> <a href="https://discord.gg/vVDxqARsHw">Discord</a></p>
+      </div>
+   </footer>
+   <div class="footer-bottom">
+      <div>
+         <a href="privacy_policy.html">利用規約と方針</a>
+      </div>
 
-        <div><p>© 2026</p></div>
-     </div>
-     <!-- フッターここまで -->
+      <div>
+         <p>© 2026</p>
+      </div>
+   </div>
+   <!-- フッターここまで -->
 
 </body>
+
 </html>

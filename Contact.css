@@ -1,5 +1,4 @@
 /* ヘッター */
-/* ヘッター */
 nav {
     position: fixed;
     top: 0;
@@ -65,13 +64,21 @@ body {
     background-position-y: 120px;
     background-size: 120% auto;
     margin: 0;
-    padding: 0;
 }
 
-/* 画面中央 */
+.contact-container h1 {
+    color: white;
+    font-size: 80px;
+}
+
+.contact-container {
+    text-align: center;
+    font-size: 40px;
+}
+
 .contact-box{
     width: 700px;
-    margin: 150px auto;
+    margin: 10px auto;
     background: rgba(0,0,0,0.7);
     padding: 50px;
     text-align: center;
@@ -81,6 +88,7 @@ body {
 .contact-box h1{
     color: white;
     margin-bottom: 30px;
+    text-align: center;
 }
 
 /* 入力欄 */
